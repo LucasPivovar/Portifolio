@@ -15,25 +15,27 @@
 </script>
 
 <style scoped>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: #262626;
         color: #fff;
         font-size: 1.2rem;
         font-weight: 700;
         height: 5rem;
-        margin: 0 auto;
+        margin-top: 1rem;
     }
 
     header span {
         color: #00B2FF;
         font-weight: bold;
     }
-    
-
     
     nav {
     padding: 30px;
@@ -50,5 +52,13 @@
     nav a.router-link-exact-active {
         color: #00B2FF;
         border-bottom: 2px solid #00B2FF;
+    }
+
+    @media screen and (max-width: 1000px) {
+        header {
+            height: 6rem;
+            margin-top: 2rem;
+            padding: 20px;
+        }
     }
 </style>
