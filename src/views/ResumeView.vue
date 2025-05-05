@@ -238,6 +238,7 @@ aside p{
   color: #9e9d9d;
   margin-bottom: 2rem;
 }
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
