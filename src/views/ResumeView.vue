@@ -316,4 +316,31 @@ p{
   color: #bbbbbb;
 }
 
+@media screen and (max-width: 1000px) {
+  .box {
+    min-height: 100vh;
+    overflow: scroll;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 0;
+  }
+
+  .main-box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 100px);
+    gap: 1rem;
+  }
+}
+
 </style>
