@@ -3,8 +3,8 @@ module.exports = {
   env: {
     node: true
   },
-  'extends': [
-    'plugin:vue/vue3-essential',
+  extends: [
+    'plugin:vue/essential',
     'eslint:recommended'
   ],
   parserOptions: {
@@ -12,8 +12,6 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/no-unused-components': 'off'
-
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   }
 }
