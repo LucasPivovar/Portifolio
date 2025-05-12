@@ -57,8 +57,16 @@
     @media screen and (max-width: 1000px) {
         header {
             height: 6rem;
-            margin-top: 2rem;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+            gap: 1rem;
+            padding: 0;
         }
     }
 </style>

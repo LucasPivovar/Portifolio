@@ -99,7 +99,7 @@ body {
 
 .box {
   height: 100vh;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   position: relative;
   z-index: 10; /* Ensure content is above bubbles */
@@ -283,6 +283,7 @@ a:hover {
     min-height: 100vh;
     margin-top: 0;
     margin-bottom: 1rem;
+    height: 100%;
   }
 
   .main-box {
@@ -303,6 +304,11 @@ a:hover {
   h3, p {
     font-size: 1.2rem;
     width: 100%;
+  }
+
+  .card {
+    width: 300px;
+    height: 500px;
   }
 }
 </style>

@@ -20,7 +20,7 @@
         <div class="main-box">
           <div class="div1" v-show="estaAtivo('div1')">
             <h2>Meu Perfil</h2>
-            <p>gosto de construir soluções eficientes, que possui habilidades em Front-end e Back-end.</p>
+            <p>Olá! Sou Lucas Pivovar, desenvolvedor full Stack apaixonado por em criar soluções digitais para ajudar os outros de forma eficiente. Minha jornada na programação começou junto com o Ensino Médio há 2 anos, e busco crescer profissionalmente em projetos desafiadores.</p>
           </div>
 
           <div class="div2" v-show="estaAtivo('div2')">
@@ -154,7 +154,7 @@ aside h1{
 }
 
 aside p{
-  color: #8F8F8F;
+  color: #9a9a9c;
 }
 
 .buttons{
@@ -197,24 +197,24 @@ aside p{
 }
 
 .div1, .div2, div3 {
-  padding: 1rem;
+  padding: 0;
 }
 
 /*div2 - Experiência*/
 
-.div2 h2{
+h2{
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   border-bottom: 2px solid #8F8F8F;
 }
 
-.div2 p strong{
+p strong{
   font-weight: 300;
   color: rgb(255, 255, 255);
 }
 
-.div2 p{
+p{
   color: #ffffff;
   line-height: 22px;
   font-weight: 300;
@@ -223,20 +223,14 @@ aside p{
 .div2 ul{
   color: #bbbbbb;
   padding: 1rem;
-  
   font-weight: 300;
 }
-/*terceiro botao - Skills*/
 
+/*terceiro botao - Skills*/
 
 .div3 h2{
   margin-top: 0;
   font-size: 2rem;
-}
-
-.div3 p{
-  color: #9e9d9d;
-  margin-bottom: 2rem;
 }
 
 .grid {
@@ -244,7 +238,7 @@ aside p{
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(1, 100px);
   gap: 1rem;
-
+  margin-top: 1.1rem;
 }
 
 .item-2, .item-3 {
@@ -304,10 +298,6 @@ aside p{
   z-index: 100;
 }
 
-.div4 {
-  padding: 1rem;
-}
-
 .div4 h2{
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -318,7 +308,6 @@ aside p{
 .div4 h3{
   font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 1rem;
 }
 
 .div4 h4{
