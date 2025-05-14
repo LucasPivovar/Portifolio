@@ -308,7 +308,7 @@ a:hover {
 
   .card {
     width: 300px;
-    height: 500px;
+    height: 300px;
   }
 }
 </style>
