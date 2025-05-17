@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 <template>
   <div class="content">
     <temp-bubble></temp-bubble>
@@ -79,7 +79,6 @@ export default {
 }
 
 body {
-  background-color: #262626;
   width: 100%;
   min-height: 100vh;
   padding: 0;
@@ -98,6 +97,7 @@ body {
 }
 
 .box {
+
   height: 100vh;
   max-width: 1200px;
   width: 100%;
