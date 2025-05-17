@@ -1,114 +1,98 @@
 <template>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <body>
-    <background-bubble></background-bubble>
-    <div class="box">
-      <header-portifolio></header-portifolio>
-      <main>
-        <aside>
-          <h1>Porque me contratar?</h1>
-          <p>Eu sou um desenvolvedor Full Stack, que gosto de construir soluções eficientes, que possui habilidades em Front-end e Back-end.</p>
-          <div class="buttons">
-            <a href="#" @click.prevent="deixarAtivo('div1')" class="botoes" :style="{ backgroundColor: mostrar === 'div1' ? '#00B2FF' : '#444' }">Meu Perfil</a>
-            <a href="#" @click.prevent="deixarAtivo('div2')" class="botoes" :style="{ backgroundColor: mostrar === 'div2' ? '#00B2FF' : '#444' }">Experiência</a>
-            <a href="#" @click.prevent="deixarAtivo('div3')" class="botoes" :style="{ backgroundColor: mostrar === 'div3' ? '#00B2FF' : '#444' }">Skills</a>
-            <a href="#" @click.prevent="deixarAtivo('div4')" class="botoes" :style="{ backgroundColor: mostrar === 'div4' ? '#00B2FF' : '#444' }">Educação</a>
-          </div>
-        </aside>
-        <div class="main-box">
-          <div class="div1" v-show="estaAtivo('div1')">
-            <h2>Meu Perfil</h2>
-            <p>Olá! Sou Lucas Pivovar, desenvolvedor full Stack apaixonado por em criar soluções digitais para ajudar os outros de forma eficiente. Minha jornada na programação começou junto com o Ensino Médio há 2 anos, e busco crescer profissionalmente em projetos desafiadores.</p>
-          </div>
-
-          <div class="div2" v-show="estaAtivo('div2')">
-            <h2>Experiência</h2>
-            <p>2024 - 2025 ● Freelancer</p>
-            <p><strong>Cargo/Função:</strong> Desenvolver full Stack</p>
-            <ul>
-              <li> Desenvolvimento de APIs RESTful</li>
-              <li> Criação de front end responsivo </li>
-              <li>Manipulção de banco de dados MySQL</li>
-            </ul>
-          </div>
-
-          <div class="div3" v-show="estaAtivo('div3')">
-            <h2>Minhas habilidades</h2>
-            <p>Construo interfaces interativas e responsivas, 
-              desenvolvo soluções robustas no servidor e gerencio bancos de dados relacionais com eficiência.  Algumas das linguagens que mais utilizo:</p>
-              <div class="skills grid">
-                <div class="item">
-                  <img src="../assets/skills/vue.svg" alt="Vue.js">
-                  <span class="tooltip">Vue.js</span>
-                </div>
-                <div class="item">
-                  <img src="../assets/skills/php.svg" alt="PHP">
-                  <span class="tooltip">PHP</span>
-                </div>
-                <div class="item">
-                  <img src="../assets/skills/mysql.svg" alt="MySQL">
-                  <span class="tooltip">MySQL</span>
-                </div>
-                <div class="item">
-                  <img src="../assets/skills/js.svg" alt="JavaScript">
-                  <span class="tooltip">JavaScript</span>
-                </div>
-                <div class="item">
-                  <img src="../assets/skills/css.svg" alt="CSS">
-                  <span class="tooltip">CSS</span>
-                </div>
-                <div class="item">
-                  <img src="../assets/skills/html.svg" alt="HTML">
-                  <span class="tooltip">HTML</span>
-                </div>
-                <div class="item">
-                  <img src="../assets/skills/figma.svg" alt="Figma">
-                  <span class="tooltip">Figma</span>
-                </div>
-              </div>
-          </div>
-
-          <div class="div4" v-show="estaAtivo('div4')">
-            <h2>Educação</h2>
-            <h3>CEEP Curitiba | 2023 - 2025(Cursando)</h3>
-            <h4>Ensino Médio - Técnico em Desenvolvimento de Sistemas</h4>
-           
-          </div>
+  <background-bubble></background-bubble>
+  <div class="box">
+    <header-portifolio></header-portifolio>
+    <main>
+      <aside>
+        <h1>Por que me contratar?</h1>
+        <p>Sou um desenvolvedor Full Stack que gosta de construir soluções eficientes e tenho habilidades em Front-end e Back-end.</p>
+        <div class="buttons">
+          <a
+            v-for="(label, key) in botoes"
+            :key="key"
+            href="#"
+            @click.prevent="deixarAtivo(key)"
+            class="botoes"
+            :style="{ backgroundColor: mostrar === key ? '#00B2FF' : '#444' }"
+          >{{ label }}</a>
         </div>
-      </main>
-    </div>
-  </body>
-  <router-view/>
+      </aside>
+
+      <div class="main-box">
+        <section v-show="estaAtivo('div1')" class="div1">
+          <h2>Meu Perfil</h2>
+          <p>Olá! Sou Lucas Pivovar, desenvolvedor Full Stack apaixonado por criar soluções digitais eficientes. Minha jornada na programação começou junto com o Ensino Médio há 2 anos, e busco crescer profissionalmente em projetos desafiadores.</p>
+        </section>
+
+        <section v-show="estaAtivo('div2')" class="div2">
+          <h2>Experiência</h2>
+          <p>2024 - 2025 ● Freelancer</p>
+          <p><strong>Cargo/Função:</strong> Desenvolvedor Full Stack</p>
+          <ul>
+            <li>Desenvolvimento de APIs RESTful</li>
+            <li>Criação de front-end responsivo</li>
+            <li>Manipulação de banco de dados MySQL</li>
+          </ul>
+        </section>
+
+        <section v-show="estaAtivo('div3')" class="div3">
+          <h2>Minhas habilidades</h2>
+          <p>Construo interfaces interativas e responsivas, desenvolvo soluções robustas no servidor e gerencio bancos de dados relacionais com eficiência. Algumas das linguagens que mais utilizo:</p>
+          <div class="skills grid">
+            <div class="item" v-for="skill in skills" :key="skill.alt">
+              <img :src="skill.src" :alt="skill.alt">
+              <span class="tooltip">{{ skill.alt }}</span>
+            </div>
+          </div>
+        </section>
+
+        <section v-show="estaAtivo('div4')" class="div4">
+          <h2>Educação</h2>
+          <h3>CEEP Curitiba | 2023 - 2025 (Cursando)</h3>
+          <h4>Ensino Médio - Técnico em Desenvolvimento de Sistemas</h4>
+        </section>
+      </div>
+    </main>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import HeaderPortifolio from '@/components/HeaderPortifolio.vue'
+
 export default {
   name: 'ResumeView',
   components: {
     HeaderPortifolio,
   },
-
   data() {
-    return{
-      mostrar:'div1',
+    return {
+      mostrar: 'div1',
+      botoes: {
+        div1: 'Meu Perfil',
+        div2: 'Experiência',
+        div3: 'Skills',
+        div4: 'Educação',
+      },
+      skills: [
+        { src: '../assets/skills/vue.svg', alt: 'Vue.js' },
+        { src: '../assets/skills/php.svg', alt: 'PHP' },
+        { src: '../assets/skills/mysql.svg', alt: 'MySQL' },
+        { src: '../assets/skills/js.svg', alt: 'JavaScript' },
+        { src: '../assets/skills/css.svg', alt: 'CSS' },
+        { src: '../assets/skills/html.svg', alt: 'HTML' },
+        { src: '../assets/skills/figma.svg', alt: 'Figma' },
+      ],
     }
   },
-
-  methods:{
-    deixarAtivo(val){
+  methods: {
+    deixarAtivo(val) {
       this.mostrar = val;
     },
-
-    estaAtivo(val){
+    estaAtivo(val) {
       return this.mostrar === val;
     },
-  }
-
-};
+  },
+}
 </script>
 
 <style scoped>
