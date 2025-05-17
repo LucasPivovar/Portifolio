@@ -33,7 +33,7 @@
         "Implementação de sistema de gerenciamento de conteúdo"
     ],
     "urlProject": "https://www.prosportsbrazil.com.br/",
-	"image": "./api/project/ProSports/ProSports.png",
+	"image": "./api/project/ProSports/ProSportsDesk.png",
 	"img": "./api/project/ProSports/ProSportsDesk.png",
 	"tags": ["JS", "PHP", "MySQL"],
     "progress": "Concluído"

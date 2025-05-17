@@ -98,7 +98,7 @@ export default {
 </script>
 
 <style scoped>
-body {
+.resume-wrapper {
   background-color: #0f1520;
   width: 100%;
   height: 100vh;
