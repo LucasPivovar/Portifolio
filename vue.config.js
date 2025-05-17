@@ -1,5 +1,4 @@
 module.exports = {
-  lintOnSave: false,
   // Configuração opcional para melhorar a performance do build
   productionSourceMap: false,
   // Se você tiver problemas com CORS durante desenvolvimento
