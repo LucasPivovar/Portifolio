@@ -1,59 +1,61 @@
 <template>
-  <background-bubble></background-bubble>
-  <div class="box">
-    <header-portifolio></header-portifolio>
-    <main>
-      <aside>
-        <h1>Por que me contratar?</h1>
-        <p>Sou um desenvolvedor Full Stack que gosta de construir soluções eficientes e tenho habilidades em Front-end e Back-end.</p>
-        <div class="buttons">
-          <a
-            v-for="(label, key) in botoes"
-            :key="key"
-            href="#"
-            @click.prevent="deixarAtivo(key)"
-            class="botoes"
-            :style="{ backgroundColor: mostrar === key ? '#00B2FF' : '#444' }"
-          >{{ label }}</a>
-        </div>
-      </aside>
-
-      <div class="main-box">
-        <section v-show="estaAtivo('div1')" class="div1">
-          <h2>Meu Perfil</h2>
-          <p>Olá! Sou Lucas Pivovar, desenvolvedor Full Stack apaixonado por criar soluções digitais eficientes. Minha jornada na programação começou junto com o Ensino Médio há 2 anos, e busco crescer profissionalmente em projetos desafiadores.</p>
-        </section>
-
-        <section v-show="estaAtivo('div2')" class="div2">
-          <h2>Experiência</h2>
-          <p>2024 - 2025 ● Freelancer</p>
-          <p><strong>Cargo/Função:</strong> Desenvolvedor Full Stack</p>
-          <ul>
-            <li>Desenvolvimento de APIs RESTful</li>
-            <li>Criação de front-end responsivo</li>
-            <li>Manipulação de banco de dados MySQL</li>
-          </ul>
-        </section>
-
-        <section v-show="estaAtivo('div3')" class="div3">
-          <h2>Minhas habilidades</h2>
-          <p>Construo interfaces interativas e responsivas, desenvolvo soluções robustas no servidor e gerencio bancos de dados relacionais com eficiência. Algumas das linguagens que mais utilizo:</p>
-          <div class="skills grid">
-            <div class="item" v-for="skill in skills" :key="skill.alt">
-              <img :src="skill.src" :alt="skill.alt">
-              <span class="tooltip">{{ skill.alt }}</span>
-            </div>
+  <div class="resume-wrapper">
+    <background-bubble></background-bubble>
+    <div class="box">
+      <header-portifolio></header-portifolio>
+      <main>
+        <aside>
+          <h1>Por que me contratar?</h1>
+          <p>Sou um desenvolvedor Full Stack que gosta de construir soluções eficientes e tenho habilidades em Front-end e Back-end.</p>
+          <div class="buttons">
+            <a
+              v-for="(label, key) in botoes"
+              :key="key"
+              href="#"
+              @click.prevent="deixarAtivo(key)"
+              class="botoes"
+              :style="{ backgroundColor: mostrar === key ? '#00B2FF' : '#444' }"
+            >{{ label }}</a>
           </div>
-        </section>
+        </aside>
 
-        <section v-show="estaAtivo('div4')" class="div4">
-          <h2>Educação</h2>
-          <h3>CEEP Curitiba | 2023 - 2025 (Cursando)</h3>
-          <h4>Ensino Médio - Técnico em Desenvolvimento de Sistemas</h4>
-        </section>
-      </div>
-    </main>
-  </div>
+        <div class="main-box">
+          <section v-show="estaAtivo('div1')" class="div1">
+            <h2>Meu Perfil</h2>
+            <p>Olá! Sou Lucas Pivovar, desenvolvedor Full Stack apaixonado por criar soluções digitais eficientes. Minha jornada na programação começou junto com o Ensino Médio há 2 anos, e busco crescer profissionalmente em projetos desafiadores.</p>
+          </section>
+
+          <section v-show="estaAtivo('div2')" class="div2">
+            <h2>Experiência</h2>
+            <p>2024 - 2025 ● Freelancer</p>
+            <p><strong>Cargo/Função:</strong> Desenvolvedor Full Stack</p>
+            <ul>
+              <li>Desenvolvimento de APIs RESTful</li>
+              <li>Criação de front-end responsivo</li>
+              <li>Manipulação de banco de dados MySQL</li>
+            </ul>
+          </section>
+
+          <section v-show="estaAtivo('div3')" class="div3">
+            <h2>Minhas habilidades</h2>
+            <p>Construo interfaces interativas e responsivas, desenvolvo soluções robustas no servidor e gerencio bancos de dados relacionais com eficiência. Algumas das linguagens que mais utilizo:</p>
+            <div class="skills grid">
+              <div class="item" v-for="skill in skills" :key="skill.alt">
+                <img :src="skill.src" :alt="skill.alt">
+                <span class="tooltip">{{ skill.alt }}</span>
+              </div>
+            </div>
+          </section>
+
+          <section v-show="estaAtivo('div4')" class="div4">
+            <h2>Educação</h2>
+            <h3>CEEP Curitiba | 2023 - 2025 (Cursando)</h3>
+            <h4>Ensino Médio - Técnico em Desenvolvimento de Sistemas</h4>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>  
 </template>
 
 <script>
