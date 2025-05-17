@@ -336,9 +336,10 @@ main{
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
+    
+    top: 30px;
+    right: 35px;
+    font-size: 30px;
     cursor: pointer;
     color: #FFFFFF;
 }
@@ -354,6 +355,7 @@ main{
     margin-bottom: 15px;
     padding: 5px;
     border-bottom: 2px solid #353434;
+    margin-top: -1rem;
 }
 
 .project-detail hr {
