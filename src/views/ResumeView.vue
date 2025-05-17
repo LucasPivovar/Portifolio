@@ -76,13 +76,13 @@ export default {
         div4: 'Educação',
       },
       skills: [
-        { src: '../assets/skills/vue.svg', alt: 'Vue.js' },
-        { src: '../assets/skills/php.svg', alt: 'PHP' },
-        { src: '../assets/skills/mysql.svg', alt: 'MySQL' },
-        { src: '../assets/skills/js.svg', alt: 'JavaScript' },
-        { src: '../assets/skills/css.svg', alt: 'CSS' },
-        { src: '../assets/skills/html.svg', alt: 'HTML' },
-        { src: '../assets/skills/figma.svg', alt: 'Figma' },
+        { src: require('@/assets/skills/vue.svg'), alt: 'Vue.js' },
+        { src: require('@/assets/skills/php.svg'), alt: 'PHP' },
+        { src: require('@/assets/skills/mysql.svg'), alt: 'MySQL' },
+        { src: require('@/assets/skills/js.svg'), alt: 'JavaScript' },
+        { src: require('@/assets/skills/css.svg'), alt: 'CSS' },
+        { src: require('@/assets/skills/html.svg'), alt: 'HTML' },
+        { src: require('@/assets/skills/figma.svg'), alt: 'Figma' },
       ],
     }
   },
@@ -161,12 +161,15 @@ aside p{
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 15px;
 }
 
 .buttons a:hover {
   background-color: #555;
+  transform: scale(1.02);
+    transition: all 0.3s ease;
+
 }
 
 /*Div que muda de conteudo dinamicamente*/
@@ -220,26 +223,26 @@ p{
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(1, 100px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 100px);
   gap: 1rem;
   margin-top: 1.1rem;
 }
 
 .item-2, .item-3 {
-	grid-row: span 2;
+  grid-row: span 2;
 }
 
 .item-5 {
-	grid-column: span 2;
+  grid-column: span 2;
 }
 
 .item {
-	margin: 5px;
+  margin: 5px;
   background: #4E4E4E;
-	text-align: center;
-	font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
   width: 80px;
   height: 80px;
   padding: 1rem;
@@ -328,5 +331,4 @@ p{
     gap: 1rem;
   }
 }
-
 </style>

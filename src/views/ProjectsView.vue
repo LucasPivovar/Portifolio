@@ -221,6 +221,10 @@ main{
     width: 360px;
 }
 
+.project:hover {
+    transform: scale(1.02);
+}
+
 .project h2 {
     font-size: 1.5rem;
     color: #ffffff;
@@ -310,7 +314,6 @@ main{
     max-height: 90vh;
     overflow-y: auto;
     margin: auto;
-    /* Show scrollbar only when needed */
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: #555 #333; /* For Firefox */
 }
@@ -346,7 +349,7 @@ main{
 
 /* Project Detail Styles */
 .project-detail {
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
 }
 
 .project-detail h1 {
@@ -463,10 +466,14 @@ main{
     
     border-top: 2px solid #353434;
     padding-top: 10px;
+    margin-bottom: -10px;
 }
 
 
 @media screen and (max-width: 1000px) {
+    main{
+        margin-top: 0;
+    }
     body {
         overflow-x: hidden;
         width: 100vw;
@@ -542,5 +549,9 @@ main{
         width: 100%;
         height: auto;
     }    
+
+    .project-links{
+        margin-bottom: 5px;
+    }
 }
 </style>
