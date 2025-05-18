@@ -8,11 +8,11 @@
       <main>
         <div class="main-box">
           <h3>Desenvolvedor Full Stack</h3>
-          <h2>Olá Eu sou o <br><span>{{ displayedText }}</span><span class="cursor">|</span></h2>
-          <p>Eu transformo ideias em experiências, do front ao back-end</p>
+          <h2>Olá, eu sou o <br><span>{{ displayedText }}</span><span class="cursor">|</span></h2>
+          <p>Transformo ideias em experiências. <br> Desde o front-end até o back-end.</p>
 
           <div class="buttons">
-            <button id="dowload" @click="downloadCV">download CV <span><img src="../assets/download.svg" alt="download"></span></button>
+            <button id="dowload" @click="downloadCV">Download CV <span><img src="../assets/download.svg" alt="download"></span></button>
             <a href="https://github.com/LucasPivovar" target="_blank"><img src="../assets/github.svg" alt="github"></a>
             <a href="https://www.linkedin.com/in/lucas-pivovar-a25b71337/" target="_blank"><img src="../assets/linkedin.svg" alt="linkedin"></a>
           </div>
@@ -185,12 +185,13 @@ h2, h3 {
 
 h2 span {
   color: #00B2FF;
+  font-size: 4.1rem;
 }
 
 h2 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-size: 4.1rem;
+  font-size: 3.9rem;
   line-height: 60px;
 }
 
@@ -297,8 +298,12 @@ a:hover {
 
 
   h2 {
-    font-size: 3rem;
-    line-height: 50px;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  h2 span {
+    font-size: 3.2rem;
   }
 
   h3, p {

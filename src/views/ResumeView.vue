@@ -30,8 +30,10 @@
             <p>2024 - 2025 ● Freelancer</p>
             <p><strong>Cargo/Função:</strong> Desenvolvedor Full Stack</p>
             <ul>
+
               <li>Desenvolvimento de APIs RESTful</li>
               <li>Criação de front-end responsivo</li>
+              <li>Desenvolvimento de um sistema de CRUD</li>
               <li>Manipulação de banco de dados MySQL</li>
             </ul>
           </section>

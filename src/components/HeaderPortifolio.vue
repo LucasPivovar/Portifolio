@@ -12,9 +12,10 @@
         <!-- Navigation menu -->
         <nav :class="{ 'mobile-active': mobileMenuOpen }">
             <div class="close-menu" @click="toggleMobileMenu">&times;</div>
-            <router-link to="/" @click="closeMobileMenu">Home</router-link> 
-            <router-link to="/resume" @click="closeMobileMenu">Resume</router-link>
-            <router-link to="/projects" @click="closeMobileMenu">Projects</router-link>
+            <router-link to="/" @click="closeMobileMenu">Inicio</router-link> 
+            <router-link to="/resume" @click="closeMobileMenu">Resumo</router-link>
+            <router-link to="/projects" @click="closeMobileMenu">Projetos</router-link>
+            <router-link to="/contact" @click="closeMobileMenu">Contato</router-link>
         </nav>
         
         <!-- Overlay for mobile menu -->
