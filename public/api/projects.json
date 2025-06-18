@@ -13,12 +13,12 @@
       "Testes Unitários",
       "Uso de APIs e Libraries para melhorar a experiência do usuário"
     ],
-    "urlProject": "https://astraplataform.fwh.is/index.php",
+    "urlProject": "https://astral.fwh.is/index.php",
     "urlCode": "https://github.com/LucasPivovar/Astra/tree/main",
     "image": "./api/project/Astra/Astra.png",
     "img": "./api/project/Astra/AstraDesk.png",
     "tags": ["PHP", "MySQL", "JavaScript"],
-    "progress": "Desenvolvendo"
+    "progress": "Concluido"
   },
 
   {
@@ -37,27 +37,4 @@
     "tags": ["JS", "PHP", "MySQL"],
     "progress": "Concluído"
   },
-
-  {
-    "id": 3,
-    "title": "ListiFy",
-    "subtitle": "Plataforma para ajudar na criação de to do list",
-    "name": "Gerador de To do List",
-    "description": " O Listify nasceu para ajudar quem quer mudar de vida, mas fica travado no: por onde começar. Ele cria sugestões de hábitos personalizados para você deixar o sedentarismo pra trás, com passos simples que cabem na sua rotina. É como ter aquele amigo que te dá aquele empurrãozinho na direção certa quando você mais precisa.",
-    "contributions": [
-      "Desenvolvimi todo o front-ent e back-end do website",
-      "Desenvolvimento de layout e design",
-      "Criação de um gerador de to do list com uma IA ",
-      "Integração com servidor e banco de dados MySQL",
-      "Uso de APIs e Libraries para facilitar a experiência do usuário"
-    ],
-    "urlProject": "https://listify.ct.ws/",
-    "urlCode": "https://github.com/LucasPivovar/ListFy/tree/main",
-    "image": "./api/project/ListFy/ListFy.png",
-    "img": "./api/project/ListFy/ListFy.png",
-    "tags": ["PHP", "MySQL", "JavaScript"],
-    "progress": "Concluído"
-  }
-
-  
 ]
