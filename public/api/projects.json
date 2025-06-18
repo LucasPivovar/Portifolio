@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "title": "Astra",
+    "subtitle": "Site desenvolvido para o auxilio da cura de vicios",
+    "name": "Website para cura de vicios",
+    "description": " Plataforma web inovadora em que fui um dos responsáveis pela criação, desenvolvida para oferecer suporte psicossocial a pessoas com dependências. Integra chatbot com IA e terapia cognitivo-comportamental, ferramentas de acompanhamento de progresso e comunidade online moderada. Criada com Design Centrado no Usuário, visa reduzir recaídas, promover autonomia e combater o isolamento social. Alinhada ao ODS 3 (Saúde e Bem-Estar) da ONU.",
+    "contributions": [
+      "Participei do desenvolvimento do front-ent e do desenvolvimento do back-end",
+      "Desenvolvimento de layout e design",
+      "Criação de um chatbot com uma IA assistente",
+      "Integração com servidor e banco de dados MySQL",
+      "Testes Unitários",
+      "Uso de APIs e Libraries para melhorar a experiência do usuário"
+    ],
+    "urlProject": "https://astraplataform.fwh.is/index.php",
+    "urlCode": "https://github.com/LucasPivovar/Astra/tree/main",
+    "image": "./api/project/Astra/Astra.png",
+    "img": "./api/project/Astra/AstraDesk.png",
+    "tags": ["PHP", "MySQL", "JavaScript"],
+    "progress": "Desenvolvendo"
+  },
+
+  {
+    "id": 2,
+    "title": "ProSports",
+    "name": "Website para esportes",
+    "subtitle": "A Melhor Agência de Esportes do Mundo",
+    "description": "Plataforma web em que fui um dos responsáveis pela criação, voltada para olheiros esportivos, onde atletas possuem seus card, facilitando sua divulgação e descoberta por recrutadores.",
+    "contributions": [
+      "Participei do desenvolvimento do front-ent e do desenvolvimento do back-end",
+      "Implementação de sistema de gerenciamento de conteúdo"
+    ],
+    "urlProject": "https://www.prosportsbrazil.com.br/",
+    "image": "./api/project/ProSports/ProSportsDesk.png",
+    "img": "./api/project/ProSports/ProSportsDesk.png",
+    "tags": ["JS", "PHP", "MySQL"],
+    "progress": "Concluído"
+  },
+
+  {
+    "id": 3,
+    "title": "ListiFy",
+    "subtitle": "Plataforma para ajudar na criação de to do list",
+    "name": "Gerador de To do List",
+    "description": " O Listify nasceu para ajudar quem quer mudar de vida, mas fica travado no: por onde começar. Ele cria sugestões de hábitos personalizados para você deixar o sedentarismo pra trás, com passos simples que cabem na sua rotina. É como ter aquele amigo que te dá aquele empurrãozinho na direção certa quando você mais precisa.",
+    "contributions": [
+      "Desenvolvimi todo o front-ent e back-end do website",
+      "Desenvolvimento de layout e design",
+      "Criação de um gerador de to do list com uma IA ",
+      "Integração com servidor e banco de dados MySQL",
+      "Uso de APIs e Libraries para facilitar a experiência do usuário"
+    ],
+    "urlProject": "https://listify.ct.ws/",
+    "urlCode": "https://github.com/LucasPivovar/ListFy/tree/main",
+    "image": "./api/project/ListFy/ListFy.png",
+    "img": "./api/project/ListFy/ListFy.png",
+    "tags": ["PHP", "MySQL", "JavaScript"],
+    "progress": "Concluído"
+  }
+
+  
+]

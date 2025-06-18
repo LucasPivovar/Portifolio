@@ -1,0 +1,16 @@
+{
+	"id": 1,
+	"title": "Astra",
+    "description": "Plataforma intuitiva desenvolvida para auxiliar pessoas em processo de recuperação de dependências, oferecendo suporte e recursos personalizados para o tratamento.",
+	"contributions": [
+        "Desenvolvimento completo do front-end e back-end",
+        "Implementação de sistema de gerenciamento de conteúdo",
+        "Otimização de performance e SEO",
+        "Integração com APIs de saúde"
+    ],
+    "urlProject": "https://github.com/patriciavo28/Astra",
+    "urlCode": "https://github.com/patriciavo28/Astra",
+	"image": "",
+	"tags": ["PHP", "MySQL", "JavaScript"],
+    "progress": "Em desenvolvimento"
+}
