@@ -5,7 +5,7 @@
       <header-portifolio></header-portifolio>
       <main>
         <aside>
-          <h1>Por que me contratar?</h1>
+          <h1>Como posso contribuir?</h1>
           <p>Sou um desenvolvedor Full Stack que gosta de construir soluções eficientes e tenho habilidades em Front-end e Back-end.</p>
           <div class="buttons">
             <a
